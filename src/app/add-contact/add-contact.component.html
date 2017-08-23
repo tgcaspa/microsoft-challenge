@@ -7,9 +7,10 @@
         <input id="new-in-name"
                formControlName="name"
                class="form-control"
-               placeholder="Name">
+               placeholder="Name"
+               type="text">
         <small class="text-danger"
-               *ngIf="!form.get('name').pristine && form.get('name').errors">
+               *ngIf="!form.get('name').pristine && form.get('name').invalid">
             This field is required
         </small>
     </div>
@@ -18,7 +19,8 @@
         <input id="new-in-phone"
                formControlName="phone"
                class="form-control"
-               placeholder="Phone#">
+               placeholder="Phone#"
+               type="tel">
         <small class="text-danger"
                *ngIf="!form.get('phone').pristine && form.get('phone').hasError('required')">
             This field is required
