@@ -1,0 +1,12 @@
+<form [formGroup]="form" class="mt-3"
+      (keyup)="inputFilter(form)">
+    <div class="form-group row">
+        <div class="col">
+            <!--<fa name="search"></fa>-->
+            <input id="in-search"
+                   formControlName="search"
+                   class="form-control"
+                   placeholder="search">
+        </div>
+    </div>
+</form>

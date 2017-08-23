@@ -7,6 +7,7 @@
 
 # dependencies
 /node_modules
+/vendor
 
 # IDEs and editors
 /.idea
@@ -27,6 +28,7 @@
 # misc
 /.sass-cache
 /connect.lock
+/composer.lock
 /coverage
 /libpeerconnection.log
 npm-debug.log

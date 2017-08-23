@@ -1,0 +1,16 @@
+@import '../../styles/mixins';
+
+input {
+  @include placeholder {
+    color: white;
+  }
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  &:before {
+    content: "\F002" !important;
+  }
+  &:after {
+    content: "";
+  }
+}

@@ -1,0 +1,31 @@
+<table class="table table-inverse mt-2 mb-0">
+    <tbody *ngIf="contactList; else loading">
+        <tr *ngFor="let contact of contactList; let i=index">
+            <td scope="row">
+                <span *ngIf="isTitleBlock(contact)" class="square square-title">
+                    {{contact.name|firstLetter}}
+                </span>
+                <span class="square square-empty"></span>
+            </td>
+            <td>
+                <div *ngIf="isTitleBlock(contact)">
+                    <span class="square square-title">XX</span>
+                </div>
+                <div>
+                    <p class="mb-0">{{contact.name}}</p>
+                    <p class="mb-0 text-muted">{{contact.phone}}</p>
+                </div>
+            </td>
+        </tr>
+        <tr *ngIf="!contactList.length">
+            <td colspan="2"><p>No contacts exist</p></td>
+        </tr>
+    </tbody>
+    <ng-template #loading>
+        <tbody>
+            <tr>
+                <td><p>Loading...</p></td>
+            </tr>
+        </tbody>
+    </ng-template>
+</table>

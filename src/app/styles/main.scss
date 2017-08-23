@@ -1,0 +1,28 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import 'mixins';
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+.rounded{
+  border-radius: 50% !important;
+}
+table {
+  &.table-inverse {
+    background-color: black;
+  }
+  td {
+    border-top: none !important;
+    vertical-align: middle !important;
+  }
+}
+.hidden {
+  display: none !important;
+}
+
+h6 { font-size: 14px; }

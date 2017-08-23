@@ -1,0 +1,16 @@
+.square {
+  display: grid;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  &.square-empty {
+    background-color: #212529;
+  }
+  &.square-title {
+    background-color: #23accc;
+    color: white;
+    font-size: 2em;
+    text-transform: lowercase;
+  }
+}
