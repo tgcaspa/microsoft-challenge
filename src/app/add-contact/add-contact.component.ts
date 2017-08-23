@@ -34,12 +34,11 @@ export class AddContactComponent {
         this.contactSvc.addContact(value)
             .subscribe(
             (result: boolean) => {
-                const self = this;
-                // tricky fakeloader
-                setTimeout(function(){
-                    self.router.navigate(['/my-contacts']);
-                }, 1000);
-
+                if(result) {
+                    this.router.navigate(['/my-contacts']);
+                } else {
+                    alert('Some error occurred while adding contact.')
+                }
             },
             (error: Response) => {
                 alert(error);

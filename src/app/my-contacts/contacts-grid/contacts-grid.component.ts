@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, HostListener, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { ContactModel } from "./contact.model";
 import { FirstLetterPipe } from "./first-letter.pipe";
 
@@ -18,13 +18,8 @@ export class ContactsGridComponent implements OnChanges {
     }
 
     ngOnChanges(changes: SimpleChanges): void {
-        if(changes['contactList']) {
-            this.contactList = null;
-            const self = this;
-            // tricky fakeloader
-            setTimeout(function(){
-                self.contactList = changes['contactList'].currentValue || [];
-            }, 1000);
+        if(changes['contactList'] && !changes['contactList'].firstChange) {
+            this.contactList = changes['contactList'].currentValue || [];
         }
     }
 

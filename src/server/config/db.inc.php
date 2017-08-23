@@ -7,9 +7,9 @@
  */
 
 $db_config = [
-    'dbname'   => 'challenge',
-    'user'     => 'root',
-    'password' => 'DimaH2016!!',
-    'host'     => 'localhost',
+    'dbname'   => '****',
+    'user'     => '****',
+    'password' => '****',
+    'host'     => '****',
     'port'     => 3306,
 ];

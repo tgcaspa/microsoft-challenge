@@ -8,7 +8,7 @@ declare let _: any;
 export class FirstLetterPipe implements PipeTransform {
 
     transform(value: any, args?: any): any {
-        return value.charAt(0) || "";
+        return _.lowerCase(value.charAt(0)) || "";
     }
 
 }

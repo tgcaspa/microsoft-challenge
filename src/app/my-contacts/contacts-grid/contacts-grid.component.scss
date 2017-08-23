@@ -10,7 +10,18 @@
   &.square-title {
     background-color: #23accc;
     color: white;
-    font-size: 2em;
+    font-size: 2.6em;
     text-transform: lowercase;
+    margin-bottom: 12px;
+  }
+}
+
+table {
+  tbody {
+    tr {
+      td:first-child {
+        width: 100px;
+      }
+    }
   }
 }
