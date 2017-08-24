@@ -1,11 +1,13 @@
-@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/bootstrap/scss/bootstrap';
 @import 'mixins';
 
 body {
   background-color: black;
   color: white;
+  overflow: hidden;
 }
 
+button,
 .cursor-pointer {
   cursor: pointer !important;
 }
