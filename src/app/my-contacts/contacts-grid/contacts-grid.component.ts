@@ -18,6 +18,7 @@ export class ContactsGridComponent implements OnChanges {
     }
 
     ngOnChanges(changes: SimpleChanges): void {
+        this.alphabet = "";
         if(changes['contactList'] && !changes['contactList'].firstChange) {
             this.contactList = changes['contactList'].currentValue || [];
         }

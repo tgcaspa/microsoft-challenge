@@ -4,7 +4,6 @@ input {
   @include placeholder {
     color: white;
   }
-  outline: none !important;
   background-color: transparent;
   color: white;
   font-weight: bold;
@@ -12,6 +11,8 @@ input {
   &:focus {
     background-color: transparent;
     color: white;
+    outline: 0;
+    border: 0;
   }
 }
 
