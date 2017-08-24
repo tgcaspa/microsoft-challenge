@@ -13,3 +13,7 @@ filters the grid accordingly (user doesn't have to press the “search” button
 or any other place of your choice).
 - Upon visit in the web site's landing page, the data is loaded from storage and presented in the
 main grid.
+
+## Screenshots
+
+<img src="screens-min.jpg">
